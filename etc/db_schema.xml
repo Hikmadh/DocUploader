@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="Uploaded_Documents" resource="default" engine="innodb" comment="uploaded Document">
+        <column xsi:type="int" name="Document_id" nullable="false" unsigned="true" identity="true" comment="Document ID"/>
+        <column xsi:type="varchar" name="customer_name" nullable="false" length="25" comment="Name"/>
+        <column xsi:type="datetime" name="Date_Time" nullable="false" comment="Date and Time"/>
+        <column xsi:type="blob" name="Document" nullable="false" comment="Document File"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="Document_id"/>
+        </constraint>
+    </table>
+</schema>

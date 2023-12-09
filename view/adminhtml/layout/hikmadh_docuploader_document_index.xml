@@ -1,0 +1,21 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	  <head>
+        <script src="Hikmadh_DocUploader::js/admin-popup.js" />
+    </head>
+    <update handle="styles"/>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="grid"/>
+        </referenceContainer>
+		<referenceBlock name="Document">
+            <arguments>
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

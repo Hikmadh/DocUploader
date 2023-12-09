@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * menu
+ *
+ * @copyright Copyright © 2020 Magetop. All rights reserved.
+ * @author    info@magetop.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Hikmadh_DocUploader::hikmadh_DocUploader" title="Manage Documents" module="Hikmadh_DocUploader" sortOrder="20" resource="Hikmadh_DocUploader::hikmadh_DocUploader" />
+        <add id="Hikmadh_DocUploader::DocUploader" title="Uploaded Documents" module="Hikmadh_DocUploader" sortOrder="1" parent="Hikmadh_DocUploader::hikmadh_DocUploader" action="hikmadh_DocUploader/document/index" resource="Hikmadh_DocUploader::DocUploader" />
+    </menu>
+</config>
